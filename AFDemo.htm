@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<style>
+.wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	padding-right: 7px;
+	padding-left: 7px;
+}
+input {
+	width : 100px;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+input[type = text] {
+	width: 100%;
+	padding: 10px 15px;
+	margin: 10px 0;
+}
+input[type = submit] {
+	background-color: gray;
+	border: none;
+	color: black;
+	padding: 7px 14px;
+	text-decoration: none;
+	font-weight: bold;
+	margin: 2px 1px;
+	cursor: pointer;
+}
+input[type = text]:focus {
+	background-color: lightblue;
+}
+input[type = submit]:hover {
+	background-color: #686868;
+}
+#messages {
+	font-size:3;
+	line-height:140%;
+}
+#messages {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+	width:100%;
+	display: inline-block;
+	border:1px solid black;
+	max-height: 200px;
+	min-height: 200px;
+	overflow: scroll;
+}
+#messages span {
+	overflow-y: scroll;
+	overflow: scroll;
+}
+</style>
+<head>
+   <title>AFIB Detection</title>
+</head>
+<body>
+	<div class = "wrapper">
+		<h1 ALIGN=CENTER>Atrial Fibrillation Heartbeat Detection</h1>
+		<hr>
+		Welcome to AF Heartbeat Detection page <br>
+		<li> Click Choose File Button and select .csv recorded ecg file.</li>
+		<li> Click "Predict" button to start prediction process. </li>
+		<li> Wait for the result to appear.</li>
+		<hr>
+		<script type = "text/javascript">
+		</script>
+		<hr>
+		Input CSV ECG File: <br>
+		<label for="csvFile" class="form-label"></label>
+		<input class="form-control" type="file" id="csvFile" style="width: 400px;">
+		<input type='submit' name='tombol' value='Predict' />
+	</div>
+	
+      
+</form>
+</body>
+</html>
